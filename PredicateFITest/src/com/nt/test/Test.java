@@ -2,6 +2,7 @@ package com.nt.test;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 
 public class Test {
@@ -19,6 +20,11 @@ public class Test {
 		ArrayList list = new ArrayList();
 		list.add("hi");
 		System.out.println(p3.test((Collection) list));
+		
+		
+		BiPredicate<Integer,Integer> bi= (a,b)->(a+b) %2 ==0;
+		System.out.println(bi.test(10, 10));
+		
 		
 
 	}
