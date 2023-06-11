@@ -1,6 +1,6 @@
 package com.nt.test;
 
-public class iLinerSearch {
+public class iLinearSearch {
 	
 	public static void main(String[] ar) {
 		int a[] = {10,11,23,1,2,466,7};
