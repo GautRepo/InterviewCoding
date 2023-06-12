@@ -21,7 +21,7 @@ public class xviSearchElementInRotatedArray {
 	
 	public static int searchNumberIndex(Integer[] a , int num) {
 		
-		int s=0,e=a.length-1, m=s+e/2;
+		int s=0,e=a.length-1, m=(s+e)/2;
 		
 		while(s<e) {
 			if(a[m]==num) {
