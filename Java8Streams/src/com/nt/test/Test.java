@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Test {
@@ -89,7 +90,8 @@ public class Test {
 		
 		//Java 8 program to perform cube on list elements and filter numbers greater than 500.
 		
-		list.stream().map(i-> i*i*i).filter(a -> a>500).forEach(a -> System.out.println(a));
+		list.stream().map(i-> i*i*i).filter(a -> a>500
+				).forEach(a -> System.out.println(a));
 		
 		//How to count each element/word from the String ArrayList in Java8?
 		
@@ -116,15 +118,14 @@ public class Test {
 		System.out.println(map);
 		
 		
-		
-		
-		
-		
-		
-		
-		
+		System.out.println(isPrime(5));
 		
 
+	}
+	
+	//check prime number 
+	public static boolean isPrime(int number) {
+	    return !IntStream.rangeClosed(2, number/2).anyMatch(i -> number%i == 0); 
 	}
 
 }
